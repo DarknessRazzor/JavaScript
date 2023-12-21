@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <style>
+    .caja {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .form {
+      width: 200px;
+      height: 30px;
+    }
+    #tick {
+      background-color: aquamarine;
+    }
+    #cruz {
+      background-color: #ce4747;
+    }
+    #mas {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      background-color: white;
+    }
+    .boton1 {
+      margin-left: 10px;
+      height: 40px;
+      width: 40px;
+      background-color: greenyellow;
+    }
+    .boton2 {
+      margin-left: 10px;
+      height: 40px;
+      width: 40px;
+      background-color: #e96f6f;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      mas.addEventListener("click", crearFormulario);
+    }
+    /*function clonarFormulario() {
+      console.log("Puterio");
+      let cosa = document.getElementsByClassName("caja")[0];
+      let divClonado = cosa.cloneNode(true);
+      document.body.appendChild(cosa);
+    }*/
+    function crearFormulario() {
+      let div = document.createElement("div");
+      div.setAttribute("style", "display:flex; align-items:center;");
+      let cajaTextDni = document.createElement("input");
+      let cajaTextNombre = document.createElement("input");
+      let cajaTextApellido = document.createElement("input");
+      let boton = document.createElement("button");
+      document.getElementsByClassName("form");
+
+      cajaTextDni.setAttribute("placeholder", "DNI");
+      cajaTextNombre.setAttribute("placeholder", "Nombre");
+      cajaTextApellido.setAttribute("placeholder", "Apellido");
+      boton.setAttribute("style", "➕");
+
+      div.appendChild(cajaTextDni);
+      div.appendChild(cajaTextNombre);
+      div.appendChild(cajaTextApellido);
+      div.appendChild(boton);
+      document.body.appendChild(div);
+
+      let inputs = document.getElementsByClassName("form");
+      for (elemento of inputs) {
+        elemento.classList.add("form");
+      }
+      let botones = document.getElementbyClassName("boton");
+    }
+  </script>
+  <body>
+    <input id="mas" class="boton" type="button" value="➕" />
+    <div class="caja">
+      <p>DNI</p>
+      <input
+        class="form"
+        type="texto"
+        name="textarea"
+        rows="1"
+        cols="20"
+        disabled
+      />
+      <p>Nombre</p>
+      <input
+        class="form"
+        type="texto"
+        name="textarea"
+        rows="1"
+        cols="20"
+        disabled
+      />
+      <p>Apellido</p>
+      <input
+        class="form"
+        type="texto"
+        name="textarea"
+        rows="1"
+        cols="20"
+        disabled
+      />
+      <input class="boton1" type="button" value="✔" />
+      <input class="boton2" type="button" value="✖" />
+    </div>
+    <br />
+  </body>
+</html>

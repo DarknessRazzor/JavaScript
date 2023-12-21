@@ -1,0 +1,79 @@
+#barra {
+  width: 705px;
+  margin: 5px;
+  height: 16px;
+  padding: 2px;
+  border: 1px solid #cccccc;
+  background: #eeeeee;
+  border: 5px solid gray;
+}
+#reproductor {
+  position: fixed;
+  width: 730px;
+}
+#medio {
+  border: 5px solid gray;
+}
+aside {
+  position: flex;
+  float: bottom;
+  bottom: 25em;
+}
+input {
+  background-color: orange;
+  border-radius: 15px 15px 15px 15px;
+  margin: 5px;
+  width: 70px;
+  height: 40px;
+}
+#videos video {
+  margin-left: 800px;
+  border: 5px solid gray;
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 5px;
+}
+#videos {
+  margin-top: -465px;
+}
+#carga {
+  width: 100%;
+  transition: 0.1s;
+}
+#mensaje {
+  position: relative;
+  background-color: red;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 180px;
+}
+span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+p {
+  position: absolute;
+  top: 15px;
+}
+#bloqueador {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 128, 0, 0);
+  width: 100%;
+  height: 100%;
+}
+.oculto {
+  display: none;
+}
+#cero{
+  margin-top: 150px;
+  margin-right: 180px;
+}

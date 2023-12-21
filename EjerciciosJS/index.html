@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        let parrafos = document.getElementsByTagName("p");
+  
+        for (let i = 0; i < parrafos.length; i++) {
+          alert(parrafos[i].innerText);
+        }
+      </script>
+    
+  </head>
+  <body>
+    
+    <!-- Esto es un comentario -->
+    <div class="caja">
+      <h1 class="titulo">Pruebas</h1>
+      <p>Párrafo 1</p>
+      <p>Párrafo 2</p>
+      <p id="parrafo3">Parrafo 3</p>
+    </div>
+    <div class="caja">Esto es una caja</div>
+    <form method="get">
+      <table>
+        <tr>
+          <td>Nombre</td>
+          <td>
+            <input type="text" name="nombre" value="Alberto" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

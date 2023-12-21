@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function crearTabla() {
+        const div = document.createElement("div");
+        const tabla = document.createElement("table"); //creación de elementos HTML con javascript
+        const tBody = document.createElement("tbody");
+
+        for (let i = 0; i < 1; i++) {
+          //for para las filas
+          const tr = document.createElement("tr"); //tr es filas
+
+          for (let j = 0; j < 1; j++) {
+            //for para las columnas
+            const td = document.createElement("td"); //td columnas
+            const texto = document.createTextNode(``); // rellenar los huecos de las columnas con texto
+            td.appendChild(texto); // el elemento texto cuelga del td (columna)
+            tr.appendChild(td); // el elemento td cuelga del tr(filas)
+          }
+          tBody.appendChild(tr); // el elemento tr que consta de los td y los texto, cuelga del tBody (body de la tabla)
+        }
+        tabla.appendChild(tBody); // el elemento tBody del cual cuelga todo lo anterior, colgará de la tabla
+        document.body.appendChild(tabla); // y la tabla colgará del body del documento html
+        //tabla.setAttribute("border", "2px")//ponerle estilos a la tabla a la vez que la creas
+        tabla.appendChild(div);
+      }
+    </script>
+    <style>
+      table {
+        background-color: red !important;
+        border-color: red;
+      }
+      tr,
+      td {
+        width: 300px;
+        height: 300px;
+      }
+      /*td:hover{
+        background-color: lightblue;
+      }*/
+    </style>
+  </head>
+  <body>
+    <input
+      type="button"
+      id="boton"
+      value="Generar tabla"
+      onclick="crearTabla()"
+    />
+  </body>
+</html>

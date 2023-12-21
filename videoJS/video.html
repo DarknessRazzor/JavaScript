@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso</title>
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="video.css" />
+    <script src="script.js" rel="text/script"></script>
+  </head>
+  <body>
+    <div id="page">
+      <main>
+        <div id="reproductor">
+          <video id="medio" width="720" height="400" src="imgs/escenitas.mp4"></video>
+          <input type="range" id="carga" />
+
+          <aside>
+            <input type="button" id="resetear" value="Reiniciar" />
+            <input type="button" id="retrasar" value="&laquo; 10s" />
+            <input type="button" id="player" value="&#9658;/⏸︎" />
+            <input type="button" id="adelantar" value="10s &raquo;" />
+            <input type="button" id="silenciar" value="Silenciar" />
+            <label>Volumen</label>
+            <input type="button" id="masVolumen" value="+" />
+            <input type="button" id="menosVolumen" value="-" />
+          </aside>
+
+          <div id="videos">
+            <video src="imgs/atarse1.mp4" alt="bufarracas"></video>
+            <video src="imgs/atarse2.mp4" alt="tetazas"></video>
+            <video src="imgs/promocion.mp4" alt="mamelungas"></video>
+          </div>
+          <div id="bloqueador">
+            <div id="mensaje">
+              <span id="x">X</span>
+              <p id="parrafo">Podrás reproducir el vídeo en...<span id="cero"></span></p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1, #div2 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+
+window.onload = function() {
+
+    let divs = document.querySelectorAll("div");
+    for(div of divs) {
+        div.addEventListener("drop", drop);
+        div.addEventListener("dragover", allowDrop);
+    }
+    
+    drag1.draggable = true;
+    drag1.addEventListener("dragstart", drag);
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("id", this.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var idElement = ev.dataTransfer.getData("id");
+  this.appendChild(document.getElementById(idElement));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the W3Schools image into the rectangle:</p>
+
+<div id="div1"></div>
+<br>
+<img id="drag1" src="img_logo.gif" width="336" height="69">
+<div id="div2"></div>
+</body>
+</html>

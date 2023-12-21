@@ -1,0 +1,32 @@
+#plano {
+  width: 1150px;
+  height: 300px;
+}
+.cajita {
+  width: 50px;
+  height: 50px;
+  background-color: silver;
+  float: left;
+}
+.fuera {
+  background-color: yellow;
+}
+.columna {
+  background-color: orange;
+}
+.camino {
+  background-color: black;
+}
+.descubrir{
+  background-color: green;
+}
+.pasos {
+  background-image: url("../img/huellas.png");
+  background-size: cover;
+  background-position: center;
+}
+.ninot {
+  background-image: url("../img/baby.png");
+  background-size: cover;
+  background-position: center;
+}

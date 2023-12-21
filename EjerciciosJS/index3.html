@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #divRojo{
+        border: 2px;
+        background-color: red;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        float: left;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+    }
+    #divAzul{
+        border: 2px;
+        background-color: blue;
+        width: 300px;
+        height: 300px;
+        float: left;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+    }
+    #divVerde{
+        border: 2px;
+        background-color: green;
+        width: 300px;
+        height: 300px;
+        float: left;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+    }
+    #divNegro{
+        border: 2px;
+        background-color: black;
+        width: 300px;
+        height: 300px;
+        float: left;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
+        
+    }
+    .boton{
+        float: left;
+        width: 100px;
+        margin: 4%;
+        margin-left: 35%;
+    }
+    .contenedor{
+        float: left;
+        display:grid;
+        margin: 2%;
+    }
+    .circulo{
+        border-radius: 50%;
+    }
+    
+</style>
+<script>
+    function circulo(elemento){
+        elemento.classList.toggle("circulo")
+    }
+    
+    function salir(elemento){
+        elemento.classList.toggle("circulo")
+    }
+    
+    function eliminar(elemento){
+        elemento.parentNode.remove();
+         
+    }
+</script>
+<body>
+<div class="contenedor">
+    <div id="divRojo" class="cuadrado" onmouseover="circulo(this)" onmouseout="salir(this)">
+    </div>
+    <input id="botoncito "type="button" class="boton" value="ELIMINAR" onclick="eliminar(this)">
+</div>
+<div class="contenedor">
+    <div id="divAzul" class="cuadrado" onmouseover="circulo(this)" onmouseout="salir(this)">
+    </div>
+    <input id="botoncito" type="button" class="boton" value="ELIMINAR">
+</div>
+<div class="contenedor">
+    <div id="divVerde" class="cuadrado" onmouseover="circulo(this)" onmouseout="salir(this)">
+    </div>
+    <input id="botoncito" type="button" class="boton" value="ELIMINAR">
+</div>
+<div class="contenedor">
+    <div id="divNegro" class="cuadrado" onmouseover="circulo(this)" onmouseout="salir(this)">
+    </div>
+    <input id="botoncito" type="button" class="boton" value="ELIMINAR">
+</div>
+</body>
+</html>

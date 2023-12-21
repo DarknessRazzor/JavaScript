@@ -1,0 +1,114 @@
+#panelPrincipal {
+    border-radius:5px;
+    border:1px solid grey;
+    width:calc(100% - 42px);
+    margin:10px;
+    padding:10px;
+    text-align: center;
+}
+
+.equipo {
+    float: left;
+    margin:10px;
+    padding:10px;
+    width:calc(50% - 42px);
+    height: 1000px;
+    position: relative;
+}
+
+#equipo1 {
+    background-image: url(../img/campizq.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 5px 0 0 5px;
+    margin-right:0;
+}
+
+.cantidadJugadores {
+    background-color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding:10px;
+    width:200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow:5px 5px 15px black;
+}
+
+#equipo2 {
+    background-image: url(../img/campder.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 0 5px 5px 0;
+    margin-left:0;
+}
+#jugar {
+    text-align: center;
+}
+.jugador {
+    transition: border .3s;
+    float:left;
+    margin: 10px;
+    box-shadow: 5px 5px 15px black;
+    height:120px;
+    cursor: pointer;
+    border:1px solid transparent;
+}
+.jugador:hover {
+    transition: border .3s;
+    border:1px solid white;
+}
+select, button {
+    width:150px;
+    padding:5px;
+    cursor: pointer;
+}
+
+#equipo1 div {
+    float:right;
+}
+
+.campo {
+    width: 100%;
+}
+
+
+#equipo1 img {
+    float:right;
+}
+
+#bloquear {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: 100;
+}
+
+#mensaje {
+    width:500px;
+    height:200px;
+    background-color:white;
+    box-shadow:5px 5px 15px;
+    position: absolute;
+    z-index: 101;
+    left: calc(50% - 250px);
+    top: 400px;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.error {
+    background-color: red !important;
+}
+
+.oculto {
+    display: none;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    form{
+        border: 2px solid black;
+        width: 600px;
+        height: 300px;
+        margin: auto;
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    label{
+        margin: auto;
+    }
+    button{
+        background-color: blue;
+        width: 60px;
+        margin: auto;
+        color: white;
+    }
+    label input{
+        margin: auto;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function comprobarNombre(){
+            let regNombre = /^[a-zA-Z]{0,100}$/;
+            if (nombre.value.match(regNombre)==null){
+                alert("Formato incorrecto")
+            }
+        }
+        function comprobarApellido(){
+            let regApellido = /^[a-zA-Z]{0,100}$/;
+            if (apellido.value.match(regApellido)==null){
+                alert("Formato incorrecto")
+            }
+        }
+        function comprobarEmail(){
+            let regEmail = /^(\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})){0,100}$/
+            if (email.value.match(regEmail)==null){
+                alert("Formato de email incorrecto")
+            }
+        }
+        function comprobarDni(){
+            let regDni = /^(\d{8}[a-zA-Z]){0,100}$/;
+            if (DNI.value.match(regDni)==null){
+                alert("Formato de DNI incorrecto")
+            }
+        }
+        function comprobarPass(){
+            let regPass = /^(\w){0,100}$/;
+                if(password.value.match(regPass)==null){
+                    alert("Contraseña no válida, los carácteres especiales no son soportados")
+                }
+        }
+        function confirmarPass(){
+            let pass = document.getElementById("password").value;
+            let pass2 = document.getElementById("passwordRepeat").value;
+            if (pass === pass2 && pass!=="" && pass2!==""){
+                alert("Contraseña correcta, puedes continuar")
+            }else if (pass.length === 0 && pass2.length === 0){
+                alert("Las contraseñas están vacías")
+            }else{
+                alert("Las contraseñas no coinciden")
+            }
+        }
+        function comprobarIp() {
+            let regIp = /^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){0,100}$/
+            if (IPequipo.value.match(regIp) == null) {
+                alert("IP incorrecta")
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+<form>
+    <h2 style="color: white; text-align: center;">
+        Formulario Total
+    </h2>
+    <label>
+        Nombre:
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" onblur="comprobarNombre()">
+
+    </label>
+
+    <label>
+        Apellido:
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" onblur="comprobarApellido()">
+    </label>
+
+    <label>
+        e-mail:
+        <input type="email" name="email" id="email" placeholder="Email" onblur="comprobarEmail()">
+    </label>
+
+    <label>
+        DNI:
+        <input type="text" name="DNI" id="DNI" placeholder="DNI" onblur="comprobarDni()">
+    </label>
+
+    <label>
+        Password:
+        <input type="password" name="password" id="password" placeholder="Password" onblur="comprobarPass()">
+    </label>
+
+    <label>
+        Repetir password:
+        <input type="password" name="password" id="passwordRepeat" placeholder="Password" onblur="confirmarPass()">
+    </label>
+
+    <label>
+        IP Equipo:
+        <input type="text" name="IPequipo" id="IPequipo" placeholder="IP Equipo" onblur="comprobarIp()">
+    </label>
+    <button type="button">Enviar</button>
+
+</form>
+</body>
+</html>
