@@ -1,0 +1,214 @@
+.comunidad {
+    font-size: 7pt;
+    line-height: 10px;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.comunidad div{
+    position: absolute;
+}
+
+#contenedor {
+    border:2px solid black;
+    background-color: #FF000020;
+    width:500px;
+    height:459px;
+    padding:10px;
+    box-shadow: 5px 5px 15px gray;
+}
+
+.comunidad div a {
+    font-weight: bold;
+    text-shadow: black 5px 5px 5px 15px;
+    text-decoration: none;
+    padding:5px;
+    border:1px solid transparent;
+    background-color:transparent;
+    transition: all .3s;
+    color:black;
+}
+
+.comunidad div a:hover {
+    transition: all .3s;
+    background-color: red;
+    color: white;
+    border-radius:3px;
+    border:1px solid white;
+    box-shadow:3px 3px 10px black;
+}
+
+#pais {
+    width:500px;
+    height:459px;
+}
+
+#galicia{
+    left:43px;
+    top: 57px;
+}
+
+#asturias {
+    left:109px;
+    top: 42.5px;
+}
+
+#cantabria {
+    left:184px;
+    top: 46.5px;
+}
+
+#paisVasco {
+    left:234px;
+    top: 57px;
+}
+
+#navarra {
+    left:270px;
+    top: 74.5px;
+}
+
+#laRioja {
+    left:240px;
+    top: 95px;
+}
+
+#aragon {
+    left:304px;
+    top: 129.5px;
+}
+
+#catalunya {
+    left:381.5px;
+    top: 112px;
+}
+
+#comunidadValenciana {
+    left:320px;
+    top: 227px;
+}
+
+#murcia {
+    left:287px;
+    top: 309.5px;
+}
+
+#andalucia {
+    left:154px;
+    top: 326px;
+}
+
+#extremadura {
+    left:95px;
+    top: 242px;
+}
+
+#castillaMancha {
+    left:185.5px;
+    top: 232px;
+}
+
+#castillaLeon {
+    left:154px;
+    top: 112px;
+}
+
+#madrid {
+    left:197px;
+    top: 182px;
+}
+
+#ceuta {
+    left:108px;
+    top: 407px;
+}
+
+#melilla {
+    left:201.5px;
+    top: 432px;
+}
+
+#baleares {
+    left:412.75px;
+    top: 198px;
+}
+
+#canarias {
+    left:411.5px;
+    top: 417px;
+}
+
+#portugal {
+    left:50px;
+    top: 192px;
+}
+
+#andorra {
+    left:409px;
+    top: 67px;
+}
+
+#francia {
+    left:434px;
+    top: 37px;
+
+}
+
+#gibraltar {
+    left:164px;
+    top: 387px;
+}
+
+#marruecos {
+    left:134px;
+    top: 432px;
+}
+
+#marCantabrico {
+    left:174px;
+    top: 23.4px;
+}
+
+#marMediterraneo {
+    left:404px;
+    top: 323.25px;
+}
+
+#oceanoAtlantico {
+    left:374px;
+    top: 387px;
+}
+
+.marOceano {
+    color: #48A3B5;
+}
+
+.territorioE {
+    color: #AAA300
+}
+table {
+    text-align:center;
+}
+td {
+    transition: all .3s;
+    background-color:transparent;
+    padding:3px;
+    margin-right:10px;
+    border:1px solid black;
+    cursor:pointer;
+    border-radius:3px;
+}
+td:hover {
+    transition: all .3s;
+    background-color:red;
+    box-shadow:3px 3px 10px black;
+}
+td:hover a {
+    color:white;
+}
+#informacion {
+    padding-top:20px;
+}
