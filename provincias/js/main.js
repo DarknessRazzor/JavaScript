@@ -1,11 +1,10 @@
 let datos;
-
 window.onload = () => {
   recogerDatos();
 };
 function recogerDatos() {
   let URLDatos = "https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/provincias-espanolas/records?limit=52";
-  fetch(URLDatos).then((datos) => datos.json()).then((dato) => {
+  fetch(URLDatos).then((datos) => datos.json()).then(dato => {
     console.log(dato);
       datos = dato.results;
       cargarProvincias();
