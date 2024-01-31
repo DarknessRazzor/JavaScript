@@ -55,7 +55,7 @@ function cargarTabla(){
     let numeroFecha = datitos.date;
     let cadenaFecha = numeroFecha.toString();
     let año = parseInt(cadenaFecha.slice(0, 4));
-    let mes = parseInt(cadenaFecha.slice(4, 6)) - 1; 
+    let mes = parseInt(cadenaFecha.slice(4, 6)); 
     let dia = parseInt(cadenaFecha.slice(6, 8));
 
     let fecha = dia+"/"+mes+"/"+año;
